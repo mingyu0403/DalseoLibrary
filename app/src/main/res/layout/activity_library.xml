@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.hs.dgsw.dalseolibrary.LibraryActivity"
+    android:padding="5dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/CustomTabSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textlines"
+        android:text="도서관" />
+
+    <android.support.v7.widget.RecyclerView
+        android:padding="@dimen/padding_15dp"
+        android:id="@+id/recyclerViewLibraryList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

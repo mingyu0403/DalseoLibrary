@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="kr.hs.dgsw.dalseolibrary.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:padding="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/dalseo_logo" />
+
+        <TextView
+            style="@style/CustomTabSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textlines"
+            android:text="이 달의 대출 순위" />
+
+        <android.support.v7.widget.CardView style="@style/CustomCardViewSetting">
+            <TextView
+                android:id="@+id/textView1Rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="대출 순위 1"
+                style="@style/CustomContentSetting"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView style="@style/CustomCardViewSetting">
+            <TextView
+                android:id="@+id/textView2Rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="대출 순위 2"
+                style="@style/CustomContentSetting"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView style="@style/CustomCardViewSetting">
+            <TextView
+                android:id="@+id/textView3Rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="대출 순위 3"
+                style="@style/CustomContentSetting"/>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="책 대출 테스트 버튼입니다." />
+
+    </LinearLayout>
+
+
+</LinearLayout>

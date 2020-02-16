@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="@dimen/padding_15dp">
+    <TextView
+        android:id="@+id/textViewLibraryNameInfo"
+        style="@style/CustomTabSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textlines"
+        android:text="도서관 이름" />
+
+    <android.support.v7.widget.CardView style="@style/CustomCardViewSetting"
+        android:id="@+id/card1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewLibraryImageInfo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        style="@style/CustomTabSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textlines"
+        android:text="도서관 위치" />
+
+    <android.support.v7.widget.CardView style="@style/CustomCardViewSetting"
+        android:id="@+id/card2">
+        >
+        <TextView
+            android:id="@+id/textViewLocationInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도서관 위치"
+            style="@style/CustomContentSetting"/>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        style="@style/CustomTabSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textlines"
+        android:text="도서관 휴무일" />
+
+    <android.support.v7.widget.CardView style="@style/CustomCardViewSetting"
+        android:id="@+id/card3">
+        >
+
+        <TextView
+            android:id="@+id/textViewClosedDayInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도서관 휴무일"
+            style="@style/CustomContentSetting"/>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

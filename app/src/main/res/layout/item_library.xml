@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CustomCardViewSetting">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewLibraryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="도서관 이름"
+            style="@style/CustomTitleSetting"/>
+
+        <TextView
+            android:id="@+id/textViewLibraryLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="도서관 위치"
+            style="@style/CustomContentSetting"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
